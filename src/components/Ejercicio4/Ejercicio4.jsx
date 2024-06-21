@@ -1,4 +1,4 @@
-
+import './Ejercicio4.css';
 import { useRef, useState } from "react";
 
 const Ejercicio4 = () => {
@@ -8,11 +8,12 @@ const Ejercicio4 = () => {
 
     const handleNuevaTarea = () => {
       const nuevaTarea = $inputRef.current.value;
-      const nuevoArreglo = [nuevaTarea, ...todos]
-      setTodos(nuevoArreglo);
-
-      $inputRef.current.value = "";
-    }
+      if (nuevaTarea.trim()) {
+        const nuevoArreglo = [nuevaTarea, ...todos]
+        setTodos(nuevoArreglo);
+        $inputRef.current.value = "";
+      }
+    };
 
   return (
     <section>
