@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Header from "../components/Header/Header";
 
 const RootView = () => {
     return (
         <>
-            <header>Aca pondré el header</header>
+            <Header />
             <main>
                 <Outlet />
             </main>

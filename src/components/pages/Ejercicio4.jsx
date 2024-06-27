@@ -1,4 +1,3 @@
-import './Ejercicio4.css';
 import { useRef, useState } from "react";
 
 const Ejercicio4 = () => {
@@ -16,16 +15,16 @@ const Ejercicio4 = () => {
     };
 
   return (
-    <section>
+    <section class="border border-2 d-inline-block p-2">
       {/*creacion de tareas*/}
         <h1>Bienvenido</h1>
         <p>Ingresa tus tareas:</p>
         <div>
           <input type="text" ref={$inputRef} />
         </div>
-        <button onClick={handleNuevaTarea} className='btn btn-primary mt-3' >Agregue tarea</button>
+        <button onClick={handleNuevaTarea} className='btn btn-light mt-3' >Agregue tarea</button>
       {/*listado de tareas*/}
-      <ul>
+      <ul class="list-group p-2">
         {todos.map((tarea, index) => (
           <li key={index}>{tarea}</li>
             )

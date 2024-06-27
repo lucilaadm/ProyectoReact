@@ -3,8 +3,9 @@ import RootView from "../views/RootView.jsx";
 import HolaMundo from "../components/pages/Ejercicio1.jsx";
 import Ejercicio2 from "../components/pages/Ejercicio2.jsx";
 import Ejercicio3 from "../components/pages/Ejercicio3.jsx";
-import Ejercicio4 from "../components/Ejercicio4/Ejercicio4.jsx";
-import Ejercicio5 from "../components/Ejercicio5/Ejercicio5.jsx";
+import Ejercicio4 from "../components/pages/Ejercicio4.jsx";
+import Ejercicio5 from "../components/pages/Ejercicio5.jsx";
+import Ejercicio6 from "../components/pages/Ejercicio6.jsx";
 
 
 export const router = createBrowserRouter ([
@@ -35,6 +36,10 @@ export const router = createBrowserRouter ([
             {
                 path: "ejercicio5",
                 element: <Ejercicio5/>,
+            },
+            {
+                path: "ejercicio6",
+                element: <Ejercicio6/>,
             },
         ],
     },
