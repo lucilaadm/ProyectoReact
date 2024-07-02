@@ -1,7 +1,6 @@
 
 const Ejercicio2 = (props) => {
-    const { message } = props;
-    
-    return <h1>Hola {message}</h1>;
+    const { mensaje } = props;
+  return <h1>Hola {mensaje}</h1>;
   };
   export default Ejercicio2;
